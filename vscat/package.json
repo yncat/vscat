@@ -1,9 +1,9 @@
 {
     "name": "vscat",
     "displayName": "vscat",
-    "description": "cat's VSCode accessibility extension",
+    "description": "VSCode extension for screen reader users",
     "version": "0.0.1",
-    "publisher": "nyanchan",
+    "publisher": "yncat",
     "engines": {
         "vscode": "^1.27.0"
     },
@@ -11,16 +11,23 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.reportLine"
+        "onCommand:extension.reportLine",
+        "onCommand:extension.toggleSelectionMode"
+
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
                 "command": "extension.reportLine",
-                "title": "Report line number / cursor position"
+                "title": "Report line / cursor"
+            },
+            {
+                "command": "extension.toggleSelectionMode",
+                "title": "Toggle selection mode"
             }
         ]
+    
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
