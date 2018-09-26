@@ -4,6 +4,6 @@
 	"version": "0.0.1",
 	"scripts": {
 		"postinstall": "node .build/postinstall.js",
-		"compile-vscat": "cd vscat && npm run compile",
+		"compile-vscat": "cd vscat && npm run compile"
 	}
 }
